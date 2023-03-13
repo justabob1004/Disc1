@@ -41,18 +41,32 @@ namespace ConsoleApp5
             //Console.Read();
 
             //Заполнить одномерный массив с клавиатуры шестью целыми числами. Вывести одномерный массив в обратном порядке.
-            int[] array = new int[6];
-            for(int i=0;i<6;i++) //последовательное
-            {
-                Console.WriteLine($"array[{i}]=");
-                array[i] = int.Parse(Console.ReadLine()); 
-            }
-            for(int i=array.Length -1;i>=0;i--) //обратное
-            {
-                Console.WriteLine($"array[{i}]={array[i]}"); 
-            }
-            Console.ReadLine();
+            //int[] array = new int[6];
+            //for(int i=0;i<6;i++) //последовательное
+            //{
+            //    Console.WriteLine($"array[{i}]=");
+            //    array[i] = int.Parse(Console.ReadLine()); 
+            //}
+            //for(int i = array.Length - 1;i>=0;i--) //обратное
+            //{
+            //    Console.WriteLine($"array[{i}]={array[i]}"); 
+            //}
+            //Console.ReadLine();
 
+
+            int[]array=new int[31]
+                Random.random = new Random(); 
+            for(int i=0;i<array.Length;i++)
+            {
+                array[i] = random.Next(5, 60);
+                Console.WriteLine($"array[{ i}])={array[i]}");
+            }
+            int summ=0
+                for(int i=0;i<array.Length;i++)
+            {
+                summ += array[i];
+            }
+            Console.WriteLine($"Общее кол-во осадков={summ}");
         }
         
 
