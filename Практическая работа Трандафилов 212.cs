@@ -41,7 +41,7 @@ namespace ConsoleApp5
             //Console.Read();
 
             //Заполнить одномерный массив с клавиатуры шестью целыми числами. Вывести одномерный массив в обратном порядке.
-            int[] array = new[6];
+            int[] array = new int[6];
             for(int i=0;i<6;i++)
             {
                 Console.WriteLine($"array[{i}]=");
