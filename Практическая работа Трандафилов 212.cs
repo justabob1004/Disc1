@@ -69,6 +69,8 @@ namespace ConsoleApp5
             Console.WriteLine($"Общее кол-во осадков={summ}");
         }
         
-
+        int[]array=new int[20]
+            Random.random=new Random();
+        for(int i=0;i<array.Lenght;i++)
     }
 }
