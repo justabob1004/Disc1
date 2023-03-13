@@ -42,14 +42,14 @@ namespace ConsoleApp5
 
             //Заполнить одномерный массив с клавиатуры шестью целыми числами. Вывести одномерный массив в обратном порядке.
             int[] array = new int[6];
-            for(int i=0;i<6;i++)
+            for(int i=0;i<6;i++) //последовательное
             {
                 Console.WriteLine($"array[{i}]=");
-                array[i] = int.Parse(Console.ReadLine());
+                array[i] = int.Parse(Console.ReadLine()); 
             }
-            for(int i=array.Length -1;i>=0;i--)
+            for(int i=array.Length -1;i>=0;i--) //обратное
             {
-                Console.WriteLine($"array[{i}]={array[i]}");
+                Console.WriteLine($"array[{i}]={array[i]}"); 
             }
             Console.ReadLine();
 
