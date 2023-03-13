@@ -33,13 +33,25 @@ namespace ConsoleApp5
             //Console.WriteLine();
             //Console.WriteLine($"array[0]={array[0]}\t array[{n-1}]={array[n-1]}");
             //Console.Read();
-            int[] array = { 37, 0, 50, 46, 34, 46, 0, 13 };
-            foreach(int element in array)
-            {
-                Console.Write($"{element}\n");
-            }
-            Console.Read();
+            //int[] array = { 37, 0, 50, 46, 34, 46, 0, 13 };
+            //foreach(int element in array)
+            //{
+            //Console.Write($"{element}\n");
+            //}
+            //Console.Read();
 
+            //Заполнить одномерный массив с клавиатуры шестью целыми числами. Вывести одномерный массив в обратном порядке.
+            int[] array = new[6];
+            for(int i=0;i<6;i++)
+            {
+                Console.WriteLine($"array[{i}]=");
+                array[i] = int.Parse(Console.ReadLine());
+            }
+            for(int i=array.Length -1;i>=0;i--)
+            {
+                Console.WriteLine($"array[{i}]={array[i]}");
+            }
+            Console.ReadLine();
 
         }
         
